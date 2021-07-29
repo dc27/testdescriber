@@ -24,7 +24,7 @@ A character vector
 Describe the results of a hypothesis test in 'plain' English.
 }
 \examples{
-# Ordering a factor where the values are unique
+standard usage:
 describe_h_test_results(
 0.0123, 0.01,
 c(null = "Water is the best", alternative = "Water is not the best"),
