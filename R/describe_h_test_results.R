@@ -22,7 +22,7 @@
 
 describe_h_test_results <- function(
   p, alpha = 0.05, h = NULL, stat = "mean", sf = 2
-  ) {
+) {
   if (p < alpha) {
     # reject null hypothesis, accept alternative hypothesis
     allows <- "allows"
@@ -31,7 +31,7 @@ describe_h_test_results <- function(
       ". It is unlikely that the difference between the observed ", stat,
       " and the null hypothesis is due to chance, and instead represents a
       statistically significant difference."
-      )
+    )
   } else {
     allows <- "does not allow"
     add_alt_phrase <- paste0(

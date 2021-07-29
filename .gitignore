@@ -147,3 +147,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/r,macos,visualstudiocode,powershell,linux,windows
+.Rproj.user
