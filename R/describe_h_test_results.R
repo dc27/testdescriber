@@ -23,7 +23,7 @@
 describe_h_test_results <- function(
   p, alpha = 0.05, h = NULL, stat = "mean", sf = 2
 ) {
-  if (p < alpha) {
+  if (p <= alpha) {
     # reject null hypothesis, accept alternative hypothesis
     allows <- "allows"
     add_alt_phrase <- paste0(
