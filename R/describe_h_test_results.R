@@ -6,7 +6,6 @@
 #' @param alpha Confidence level. Default is 95%.
 #' @param h Named list vector containing text for the null and alternate hypothesis.
 #' @param stat Character vector containing type of observed statistic. Default is "mean"
-#' @param sf Number of significant figures to round p value in the output vector.
 #'
 #' @return A character vector
 #' @export
@@ -21,7 +20,7 @@
 #'
 
 describe_h_test_results <- function(
-  p, alpha = 0.05, h, stat = "mean", sf = 2
+  p, alpha = 0.05, h, stat = "mean"
 ) {
   if (p <= alpha) {
     # reject null hypothesis, accept alternative hypothesis
@@ -39,7 +38,7 @@ describe_h_test_results <- function(
   }
 
   phrase <- paste0(
-    "Given a level of significance ", alpha, ", a p-value of ",round(p, sf),
+    "Given a level of significance ", alpha, ", a p-value of ",format.pval(p),
     " ", allows, " the rejection of the null hypothesis: ",
     h$null, add_alt_phrase
   )

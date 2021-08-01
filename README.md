@@ -45,8 +45,7 @@ describe_h_test_results(
     null = "Cats and dogs are the same",
     alternative = "Cats and dogs are not the same"
     ),
-  stat = "mean",
-  sf = 3
+  stat = "mean"
   )
 ```
 

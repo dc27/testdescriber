@@ -4,7 +4,7 @@
 \alias{describe_h_test_results}
 \title{Describe the results of a hypothesis test in 'plain' English.}
 \usage{
-describe_h_test_results(p, alpha = 0.05, h, stat = "mean", sf = 2)
+describe_h_test_results(p, alpha = 0.05, h, stat = "mean")
 }
 \arguments{
 \item{p}{p value.}
@@ -14,8 +14,6 @@ describe_h_test_results(p, alpha = 0.05, h, stat = "mean", sf = 2)
 \item{h}{Named list vector containing text for the null and alternate hypothesis.}
 
 \item{stat}{Character vector containing type of observed statistic. Default is "mean"}
-
-\item{sf}{Number of significant figures to round p value in the output vector.}
 }
 \value{
 A character vector
