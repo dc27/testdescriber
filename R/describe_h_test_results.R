@@ -26,20 +26,20 @@ describe_h_test_results <- function(
     # reject null hypothesis, accept alternative hypothesis
     allows <- "allows"
     add_alt_phrase <- paste0(
-      " and accept the alternative hypothesis: ", h$alternative,
-      ". It is unlikely that the difference between the observed ", stat,
+      "' in favour of the alternative hypothesis: '", h$alternative,
+      "'. It is unlikely that the difference between the observed ", stat,
       " and the null hypothesis is due to chance, and instead represents a statistically significant difference."
     )
   } else {
     allows <- "does not allow"
     add_alt_phrase <- paste0(
-      ". Based on the sample, there is not enough evidence that the ",  stat,
+      "'. Based on the sample, there is not enough evidence that the ",  stat,
       " is statistically significantly different from the null value.")
   }
 
   phrase <- paste0(
     "Given a level of significance ", alpha, ", a p-value of ",format.pval(p),
-    " ", allows, " the rejection of the null hypothesis: ",
+    " ", allows, " the rejection of the null hypothesis: '",
     h$null, add_alt_phrase
   )
 
