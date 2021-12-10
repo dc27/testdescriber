@@ -8,6 +8,8 @@
 #'glossary$hypothesis_testing$p_value
 #'"The p-value is the probability that a value equal to or more extreme than the observed sample statistic would be observed if the null hypothesis were true. The smaller the calculated p-value, the more unlikely it is that the null hypothesis is true."
 
+glossary <- list()
+
 h_testing <- c()
 h_testing$p_value <- "The p-value is the probability that a value equal to or more extreme than the observed sample statistic would be observed if the null hypothesis were true. The smaller the calculated p-value, the more unlikely it is that the null hypothesis is true."
 h_testing$alpha <- "The critical value α is a pre-determined threshold for the p-value determining whether the null hypothesis can be rejected or not. By rejecting the null hypothesis, it is implied that it is unlikely that the difference between the observed statistic and the null value is due to chance, and instead represents a statistically significant difference."
@@ -28,7 +30,6 @@ measures_of_centre_terms$range <- "The range of a distribution is the difference
 distributions$measures_of_centre <- measures_of_centre_terms
 distributions$measures_of_spread <- measures_of_spread_terms
 
-glossary <- list()
 glossary$hypothesis_testing <- h_testing
 glossary$distributions <- distributions
 
