@@ -3,4 +3,4 @@
 export(describe_h_test_results)
 export(describe_kurtosis)
 export(describe_skewness)
-export(h_testing_terms)
+export(h_testing)
